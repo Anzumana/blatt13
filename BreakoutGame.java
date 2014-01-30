@@ -18,6 +18,7 @@ public class BreakoutGame {
 	public PowerUp curPowerUp;
 	private double powerUpTimer = 0.0;
 	
+	int lifes = 3;
 	List gameObjects = new List();
 
 	public BreakoutGame() {
@@ -80,6 +81,7 @@ public class BreakoutGame {
 		}
 		
 		if(ball.active == false) {
+			
 			ball = new Ball(Ball.DEFAULT_BALL_SIZE);
 		}
 		if(ball2!= null){
@@ -89,6 +91,7 @@ public class BreakoutGame {
 		}
 		
 		if(gameObjects.size() == 0) {
+			Syste.out.println("You won");
 			resetGame();
 		}
 	}
