@@ -16,7 +16,8 @@ public class Block extends GameObject {
 			return;
 		}
 		
-		g.setColor(Color.getHSBColor(0.2f, 0.3f, 0.6f));
+//		g.setColor(Color.getHSBColor(0.2f, 0.3f, 0.6f));
+		g.setColor(Color.getHSBColor(0.83f, 0.9f, 0.96f));
 		g.fillRect((int)x, (int)y, (int)size, (int)size);
 	}
 

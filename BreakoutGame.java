@@ -91,7 +91,7 @@ public class BreakoutGame {
 		}
 		
 		if(gameObjects.size() == 0) {
-			Syste.out.println("You won");
+			System.out.println("You won");
 			resetGame();
 		}
 	}

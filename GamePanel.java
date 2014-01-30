@@ -22,7 +22,7 @@ public class GamePanel extends JPanel {
 		Graphics2D g2 = (Graphics2D)g;
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		
-		g2.setColor(Color.WHITE);
+		g2.setColor(Color.BLUE);
 		g2.fillRect(0, 0, BreakoutGame.GAME_WIDTH, BreakoutGame.GAME_HEIGHT);
 
 		game.draw(g2);

@@ -33,7 +33,7 @@ public class Paddle extends GameObject {
 	
 	@Override
 	public void draw(Graphics2D g) {		
-		g.setColor(Color.DARK_GRAY);
+		g.setColor(Color.WHITE);
 		g.fillRect((int)x, (int)y, (int)length, (int)height);
 	}
 

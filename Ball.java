@@ -7,7 +7,7 @@ public class Ball extends GameObject {
 	public double size;
 	public double vx;
 	public double vy;
-	private Color ballColor = Color.getHSBColor(0.55f, 0.8f, 0.7f);
+	private Color ballColor = Color.WHITE;//getHSBColor(0.55f, 0.8f, 0.7f);
 	
 	public Ball(double size) {
 		this(
