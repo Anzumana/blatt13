@@ -45,7 +45,8 @@ public class Ball extends GameObject {
 			vy *= -1;
 		} else if(y > (BreakoutGame.GAME_HEIGHT - size * 0.5)) {
 			active = false;
-		}
+			System.out.println("-1 life ");
+			}
 	}
 
 	@Override

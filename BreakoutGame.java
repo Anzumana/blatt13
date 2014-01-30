@@ -18,7 +18,7 @@ public class BreakoutGame {
 	public PowerUp curPowerUp;
 	private double powerUpTimer = 0.0;
 	
-	int lifes = 3;
+	int lifes;
 	List gameObjects = new List();
 
 	public BreakoutGame() {
@@ -27,6 +27,7 @@ public class BreakoutGame {
 	
 	private void resetGame() {
 		gameObjects.clear();
+		lifes= 3;
 		
 		for(int i = 0; i < 96; ++i) {
 			double x = 20.0 + 22.0 * (i % 12);
@@ -42,6 +43,16 @@ public class BreakoutGame {
 	public void update(double secondsPassed) {	
 		paddle.update(secondsPassed);
 		ball.update(secondsPassed);
+		if(ball.active==false){
+			System.out.println(lifes);
+			lifes -= 1;
+			if(lifes<= 0){
+				System.out.println("The game");
+				System.out.println("New Game is starts");
+				resetGame();
+				lifes = 3;
+			}
+		}
 		if(ball2!= null){
 			ball2.update(secondsPassed);
 		}
